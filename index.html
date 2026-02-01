@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Service Management</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* Header */
+        .header {
+            background-color: #1e293b;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #0f172a;
+            height: 100vh;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #cbd5e1;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #334155;
+            color: white;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h2>Cloud Service Management</h2>
+        <span>Logged in as Admin</span>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Virtual Machines</a>
+            <a href="#">Storage</a>
+            <a href="#">Databases</a>
+            <a href="#">Billing</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <!-- Content Area -->
+        <main class="content">
+            <h3>Service Overview</h3>
+
+            <div class="card">
+                <h4>Virtual Machines</h4>
+                <p>Status: Running</p>
+                <p>Total VMs: 5</p>
+            </div>
+
+            <div class="card">
+                <h4>Storage Usage</h4>
+                <p>Used Space: 120 GB</p>
+                <p>Total Space: 200 GB</p>
+            </div>
+
+            <div class="card">
+                <h4>Database Services</h4>
+                <p>Active Databases: 3</p>
+                <p>Status: Healthy</p>
+            </div>
+
+            <div class="card">
+                <h4>Monthly Cost</h4>
+                <p>Total Cost: ₹4,500</p>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
